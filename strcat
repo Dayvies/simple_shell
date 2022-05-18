@@ -5,7 +5,7 @@
  * @dest: pointer of the string two
  * Return: a pointer with the resulting of the string
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, const char *src)
 {
 	unsigned int i, j = 0, len = 0;
 	char *content = NULL;
