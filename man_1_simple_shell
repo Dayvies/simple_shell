@@ -1,23 +1,53 @@
-.TH simple_shell "18 May 2022" "V1.0" "simple_shell man page"
-.SH NAME				
-.B simple_shell - Simple Unix comand interpreter	
-simple_shell: the shell or command interpreter is the computer program 
-that provides a user interface to access the services of the operating system.
+.TH hsh 1 "May 18, 2022" "1.0" "simple_shell Manual"
 
-.SH SYNOPSYS				
-.B #include \fB"shell.h"
+.SH NAME
+hsh \- Simple command-line interpreter UNIX.
 
-./hsh
-/bin/[command] [option]
-[command] [option]
+.SH SYNOPSIS
+.B ./hsh
+.I No options available.
 
 .SH DESCRIPTION
-Shell is a user interface to use the services of a computer. 
-It can be a command-line interface –the one we will build- or graphical user interface, 
-like regular software such as Windows Office.
+.B hsh
+A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems.
+This shell was inspired by the first UNIX shell created by Ken Thompson.
+hsh was developed in Ubuntu 16.04 LTS, compiled with GCC.
 
-.SH AUTHOR'S				
--Written by AnnWahome <annsonnie1@gmail.com> and Dayvies <nyamwange.davies@gmail.com>
+.SH Invocation:
+Invocate the shell in interactive mode by executing the command:
+.br
+.\&
+.RS
+\&$ ./hsh.
+
+A prompt
+will appear and the user may begin entering commands and executing them by
+pressing "Enter".
+
+Alternatively, a command can be entered and then piped into ./hsh. For example:
+.br
+.\&
+\&$ echo "hello world" | ./hsh
+
+.SH BUILTINS
+The following builtin commands are supported:
+.br
+.br
+.B env
+- prints the environment
+.br
+.\&
+.B exit
+- exits the program
 
 .SH BUGS
-There were no errors in the testing time of this code (May 18, 2022).
+No known bugs. Please report any bugs to the authors.
+
+.SH AUTHORS
+.br
+AnnWahome
+.br
+Dayvies
+
+.SH SEE ALSO
+sh
